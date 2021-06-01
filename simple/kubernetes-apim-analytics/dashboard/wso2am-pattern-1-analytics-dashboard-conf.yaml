@@ -377,18 +377,18 @@ data:
         adminUsername: admin
         adminPassword: admin
         kmDcrUrl: https://wso2am-pattern-1-am-1-service:9443/client-registration/v0.17/register
-        kmTokenUrlForRedirection: https://"ip.node.k8s.&.wso2.apim":30443/oauth2
+        kmTokenUrlForRedirection: https://am.com:30443/oauth2
         kmTokenUrl: https://wso2am-pattern-1-am-1-service:9443/oauth2
         kmUsername: admin
         kmPassword: admin
         portalAppContext: analytics-dashboard
         businessRulesAppContext : business-rules
         cacheTimeout: 900
-        baseUrl: https://"ip.node.k8s.&.wso2.apim":30646
+        baseUrl: https://am.com:30646
         grantType: authorization_code
         publisherUrl: https://wso2am-pattern-1-am-1-service:9443
         devPortalUrl: https://wso2am-pattern-1-am-1-service:9443
-        externalLogoutUrl: https://"ip.node.k8s.&.wso2.apim":30443/oidc/logout
+        externalLogoutUrl: https://am.com:30443/oidc/logout
 
     wso2.dashboard:
       roles:
