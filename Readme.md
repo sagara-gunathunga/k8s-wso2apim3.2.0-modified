@@ -26,7 +26,7 @@ Mac/Linux: etc/hosts
 Windows: C:\Windows\System32\Drivers\etc\hosts
 ```
 
-![Alt text](/Users/Karthick/Desktop/hosts.png)
+![Alt text](https://ibb.co/kmbYFzg)
  
 ### Steps to install APIM with Analytics
 
@@ -91,7 +91,9 @@ kubectl apply -f wso2apim-deployment.yaml
 #### 5. Login URLs of Publisher, Devportal and Analytics-dashboard
 
 https://am.com:30443/publisher
+
 https://am.com:30443/devportal
+
 https://am.com:30646/analytics-dashboard
 
 Remember: Gateway nodeport is 30444
