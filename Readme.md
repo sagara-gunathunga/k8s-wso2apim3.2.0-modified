@@ -26,7 +26,18 @@ Mac/Linux: etc/hosts
 Windows: C:\Windows\System32\Drivers\etc\hosts
 ```
 
-![Alt text](https://ibb.co/kmbYFzg)
+Example hosts file in /etc/hosts
+
+```
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+192.168.64.29   am.com
+127.0.0.1       localhost
+```
  
 ### Steps to install APIM with Analytics
 
@@ -53,10 +64,13 @@ kubectl apply -f wso2apim-mysql-deployment.yaml
 
 #### 3. create analytics component
 
+```
+cd ../kubernetes-apim-analytics
+```
+
 ##### Worker component (first create the worker component)
 
 ```
-cd ../kubernetes-apim-analytics
 cd worker
 kubectl apply -f wso2apim-analytics-worker-conf.yaml
 kubectl apply -f wso2apim-analytics-worker-service.yaml
@@ -80,7 +94,7 @@ kubectl apply -f wso2am-pattern-1-analytics-dashboard-deployment.yaml
 cd ../../kubernetes-apim
 ```
 
-Search for **192.168.64.29** in the wso2apim-conf.yaml file and replace it with your minikube IP address.
+Search for **192.168.64.29** in the wso2apim-conf.yaml file and replace all the instances with your minikube IP address.
 
 ```
 kubectl apply -f wso2apim-conf.yaml
